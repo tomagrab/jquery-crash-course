@@ -1,6 +1,7 @@
 :root {
     font-family: 'Montserrat';
     font-size: 20px/1.2;
+    box-sizing: border-box;
 }
 
 body,
