@@ -5,21 +5,24 @@
     --jquery-background: #144e9a;           /*JQuery logo background color*/
     --jquery-accent: #7acef4;               /*JQuery logo accent color*/
     --white: #ffffff;                       /*White color*/
+    --body-background: #cfd0d1;
 }
 
 /*==============BODY SECTION/*==============*/
 body {
     color: var(--text-primary);
     font-family: 'Montserrat';
+    background-color: var(--body-background);
 }
 
 /*==============HEADER SECTION/*==============*/
 header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-bottom: 2px solid black;
     padding: 30px 0px;
     margin-bottom: 30px;
+    border-bottom: 2px solid var(--grayscale);
+    background-color: var(--jquery-background);
 }
 
 header h1 {
@@ -27,16 +30,22 @@ header h1 {
     text-align: center;
     font-size: 3rem;
     font-weight: 800;
-    background-color: var(--jquery-background);
     color: var(--white);
-    border: 2px solid var(--jquery-background);
-    border-radius: 5px;
     padding: 5px 0;
 }
 
 header h1:hover {
-    background-color: var(--white);
-    color: var(--jquery-accent);
+    opacity: .8;
+}
+
+/*==============FOOTER SECTION/*==============*/
+footer {
+    background-color: var(--jquery-background);
+    border-top: 2px solid var(--grayscale);
+    color: var(--white);
+    text-align: center;
+    font-weight: 600;
+    padding: 20px;
 }
 /*==============MAIN SECTION/*==============*/
 section.main1 {
@@ -45,6 +54,7 @@ section.main1 {
         '. . .'
         '. CB .'            /*'CB' for 'Content Box'*/
         '. . .';
+    margin-bottom: 30px;
 }
 
 section.main1 div.content-box {
@@ -56,6 +66,7 @@ section.main1 div.content-box {
     grid-template-areas: 
         'T T T T'           /*'T' for 'Title'*/
         'C C C C';           /*'C' for 'Content'*/
+    background-color: var(--white);
 }
 
 section.main1 div.content-box h3 {
@@ -83,9 +94,9 @@ section.main-video div.video-container {
     grid-column: 2 / 4;
     border-radius: 5px;
     padding: 0;
-    height: 400px;
+    height: 300px;
     overflow: hidden;
-    border: 10px solid var(--grayscale);
+    border: 10px solid var(--jquery-background);
     background-color: var(--grayscale);
 }
 
