@@ -28,7 +28,6 @@ header {
     margin-bottom: 30px;
     border-bottom: 2px solid var(--grayscale);
     background-color: var(--jquery-background);
-    height: 100px;
 }
 
 header h1 {
