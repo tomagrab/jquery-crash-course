@@ -1,6 +1,10 @@
 /*==============VARIABLES SECTION/*==============*/
 :root {
     --text-primary: hsl(0,0%,25%);          /*Primary color for text*/
+    --grayscale: #282828;                   /*Grayscale color*/
+    --jquery-background: #144e9a;           /*JQuery logo background color*/
+    --jquery-accent: #7acef4;               /*JQuery logo accent color*/
+    --white: #ffffff;                       /*White color*/
 }
 
 /*==============BODY SECTION/*==============*/
@@ -12,16 +16,27 @@ body {
 /*==============HEADER SECTION/*==============*/
 header {
     display: grid;
-    grid-template-columns: repeat(3, minmax(1fr, 300px));
+    grid-template-columns: repeat(4, 1fr);
     border-bottom: 2px solid black;
     padding: 30px 0px;
     margin-bottom: 30px;
 }
 
 header h1 {
+    grid-column: 2 / span 2;
+    text-align: center;
     font-size: 3rem;
     font-weight: 800;
-    grid-column: 2/3;
+    background-color: var(--jquery-background);
+    color: var(--white);
+    border: 2px solid var(--jquery-background);
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+header h1:hover {
+    background-color: var(--white);
+    color: var(--jquery-accent);
 }
 /*==============MAIN SECTION/*==============*/
 section.main1 {
@@ -40,7 +55,7 @@ section.main1 div.content-box {
     display: grid;
     grid-template-areas: 
         'T T T T'           /*'T' for 'Title'*/
-        'C C C C';          /*'C' for 'Content'*/
+        'C C C C';           /*'C' for 'Content'*/
 }
 
 section.main1 div.content-box h3 {
@@ -55,4 +70,27 @@ section.main1 div.content-box p {
     padding: 10px;
     padding-bottom: 0;
     grid-area: C;
+}
+
+/*==============MAIN VIDEO SECTION/*==============*/
+section.main-video {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 30px 0;
+}
+
+section.main-video div.video-container {
+    grid-column: 2 / 4;
+    border-radius: 5px;
+    padding: 0;
+    height: 400px;
+    overflow: hidden;
+    border: 10px solid var(--grayscale);
+    background-color: var(--grayscale);
+}
+
+section.main-video div.video-container iframe {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
 }
