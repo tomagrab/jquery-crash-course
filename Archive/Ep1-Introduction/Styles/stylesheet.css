@@ -1,0 +1,167 @@
+/*==============VARIABLES SECTION/*==============*/
+:root {
+    --text-primary: hsl(0,0%,25%);          /*Primary color for text*/
+    --grayscale: #282828;                   /*Grayscale color*/
+    --jquery-background: #144e9a;           /*JQuery logo background color*/
+    --jquery-accent: #7acef4;               /*JQuery logo accent color*/
+    --white: #ffffff;                       /*White color*/
+    --body-background: #cfd0d1;             /*Body background color*/
+    --link-color: #6666FF;                  /*Hyperlink color*/
+    --red-text: red;                        /*Ted text color*/
+}
+
+/*==============SPAN SECTION==============*/
+span.bold {
+    font-weight: 900;
+}
+
+span.red {
+    color: var(--red-text);
+}
+
+span.underline {
+    text-decoration: underline;
+}
+/*==============BODY SECTION/*==============*/
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    color: var(--text-primary);
+    font-family: 'Montserrat';
+    background-color: var(--body-background);
+}
+
+/*==============HEADER SECTION/*==============*/
+header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 0px;
+    border-bottom: 2px solid var(--grayscale);
+    background-color: var(--jquery-background);
+}
+
+header h1 {
+    grid-column: 2 / span 2;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--white);
+    padding: 5px 0;
+}
+
+header h1:hover {
+    color: var(--jquery-accent);
+}
+
+/*==============FOOTER SECTION/*==============*/
+footer {
+    background-color: var(--jquery-background);
+    border-top: 2px solid var(--grayscale);
+    color: var(--white);
+    text-align: center;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+}
+
+footer p {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+}
+/*==============MAIN SECTION/*==============*/
+section.main1 {
+    display: grid;
+    grid-template-areas: 
+        '. CB .';            /*'CB' for 'Content Box'*/
+    margin: 30px 0;
+}
+
+section.main1 div.content-box {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 0px;
+    grid-area: CB;
+    display: grid;
+    grid-template-areas: 
+        'T T T T'           /*'T' for 'Title'*/
+        'S S S S'           /*'S for 'Subtitile*/
+        'C C C C';          /*'C' for 'Content'*/
+    background-color: var(--white);
+}
+
+section.main1 div.content-box h2 {
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    grid-area: T;
+}
+
+section.main1 div.content-box h3 {
+    font-size: 1.8rem;
+    text-align: left;
+    padding: 10px;
+    padding-bottom: 0;
+    grid-area: S;
+}
+
+section.main1 div.content-box div.content-box-content {
+    grid-area: C;
+}
+
+section.main1 div.content-box div.content-box-content p {
+    padding: 10px;
+    padding-bottom: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+section.main1 div.content-box div.content-box-content ul {
+    margin-left: 40px;
+    font-size: 1.4rem;
+}
+
+section.main1 div.content-box div.content-box-content ul li a:hover {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+/*==============MAIN VIDEO SECTION/*==============*/
+section.main-video {
+    display: grid;
+    grid-template-areas: 
+        '. V V .';          /*'V' for 'Video'*/
+    height: 516px;
+}
+
+section.main-video div.video-container {
+    grid-area: V;
+    border: 10px solid var(--jquery-background);
+    border-radius: 5px;
+    background-color: var(--jquery-background);
+}
+
+section.main-video div.video-container iframe {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*==============WRAPPER SECTION/*==============*/
+
+div.wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+div.content-wrapper {
+    padding-top: 30px;
+    padding-bottom: 4rem;
+}
