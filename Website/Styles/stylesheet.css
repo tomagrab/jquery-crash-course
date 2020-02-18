@@ -8,6 +8,7 @@
     --body-background: #cfd0d1;             /*Body background color*/
     --link-color: #6666FF;                  /*Hyperlink color*/
     --red-text: red;                        /*Ted text color*/
+    --shadow: 0px 0px 5px 1px var(--grayscale);
 }
 
 /*==============SPAN SECTION==============*/
@@ -92,7 +93,8 @@ section.main1 div.content-box {
     grid-template-areas: 
         'T T T T'           /*'T' for 'Title'*/
         'S S S S'           /*'S for 'Subtitile*/
-        'C C C C';          /*'C' for 'Content'*/
+        'C C C C'
+        '. I I .';          /*'C' for 'Content'*/
     background-color: var(--white);
 }
 
@@ -121,16 +123,27 @@ section.main1 div.content-box div.content-box-content p {
     padding-bottom: 0;
     font-size: 1.6rem;
     font-weight: 700;
+    overflow: hidden;
+    word-break: break-all;
 }
 
-section.main1 div.content-box div.content-box-content ul {
+section.main1 div.content-box div.content-box-content ul, ol {
     margin-left: 40px;
     font-size: 1.4rem;
 }
 
-section.main1 div.content-box div.content-box-content ul li a:hover {
+section.main1 div.content-box div.content-box-content a:hover, a:hover {
     color: var(--link-color);
     text-decoration: underline;
+}
+
+
+section.main1 div.content-box div.content-box-content img {
+    grid-area: I;
+    max-width: 500px;
+    display: block;
+    margin: 10px auto;
+    box-shadow: var(--shadow);
 }
 
 /*==============MAIN VIDEO SECTION/*==============*/

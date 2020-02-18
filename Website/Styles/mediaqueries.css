@@ -22,7 +22,7 @@
         
     }
     
-    section.main1 div.content-box div.content-box-content ul {
+    section.main1 div.content-box div.content-box-content ul, ol {
         font-size: 1.1rem;
     }
 }
@@ -41,7 +41,7 @@
         
     }
     
-    section.main1 div.content-box div.content-box-content ul {
+    section.main1 div.content-box div.content-box-content ul, ol {
         font-size: .9rem;
     }
 }
