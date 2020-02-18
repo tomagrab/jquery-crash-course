@@ -94,7 +94,10 @@ section.main1 div.content-box {
         'T T T T'           /*'T' for 'Title'*/
         'S S S S'           /*'S for 'Subtitile*/
         'C C C C'           /*'C' for 'Content'*/
-        '. B B .';          /*B for 'Button'*/
+        '. E E .'           /*'E' for 'Even'*/
+        '. O O .'           /*'O' for 'Odd'*/
+        '. A A .'           /*'A' for 'All'*/
+        '. CE CE .';        /*'CE' for 'Center'*/
     background-color: var(--white);
     width: 80%;
     margin: 0 auto;
@@ -128,12 +131,29 @@ section.main1 div.content-box div.content-box-content p {
     
 }
 
-section.main1 div.content-box button {
-    grid-area: B;
+section.main1 div.content-box button#even, button#odd, button#all, button#cen {
     padding: 5px 10px;
     outline: none;
     border: 1px solid var(--grayscale);
     color: var(--grayscale);
+    margin: 10px auto;
+    width: 110px;
+}
+
+section.main1 div.content-box button#even {
+    grid-area: E;
+}
+
+section.main1 div.content-box button#odd {
+    grid-area: O;
+}
+
+section.main1 div.content-box button#all {
+    grid-area: A;
+}
+
+section.main1 div.content-box button#cen {
+    grid-area: CE;
 }
 
 /*==============CONTENT BOX BOXES SECTION==============*/
