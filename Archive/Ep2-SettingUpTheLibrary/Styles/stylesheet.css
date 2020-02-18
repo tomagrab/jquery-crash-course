@@ -93,11 +93,9 @@ section.main1 div.content-box {
     grid-template-areas: 
         'T T T T'           /*'T' for 'Title'*/
         'S S S S'           /*'S for 'Subtitile*/
-        'C C C C'           /*'C' for 'Content'*/
-        '. B B .';          /*B for 'Button'*/
+        'C C C C'
+        '. I I .';          /*'C' for 'Content'*/
     background-color: var(--white);
-    width: 80%;
-    margin: 0 auto;
 }
 
 section.main1 div.content-box h2 {
@@ -125,39 +123,30 @@ section.main1 div.content-box div.content-box-content p {
     padding-bottom: 0;
     font-size: 1.6rem;
     font-weight: 700;
-    
+    overflow: hidden;
+    word-break: break-all;
 }
 
-section.main1 div.content-box button {
-    grid-area: B;
-    padding: 5px 10px;
-    outline: none;
-    border: 1px solid var(--grayscale);
-    color: var(--grayscale);
+section.main1 div.content-box div.content-box-content ul, ol {
+    margin-left: 40px;
+    font-size: 1.4rem;
 }
 
-/*==============CONTENT BOX BOXES SECTION==============*/
-section.main1 div.content-box div.content-box-content div#left, div#center, div#right {
-    border: 1px solid black;
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
+section.main1 div.content-box div.content-box-content a:hover, a:hover {
+    color: var(--link-color);
+    text-decoration: underline;
 }
 
-section.main1 div.content-box div.content-box-content div#left h3, div#center h3, div#right h3 {
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
+
+section.main1 div.content-box div.content-box-content img {
+    grid-area: I;
+    max-width: 500px;
+    display: block;
+    margin: 10px auto;
+    box-shadow: var(--shadow);
 }
 
-section.main1 div.content-box div.content-box-content div#left p, div#center p, div#right p {
-    font-size: .8rem;
-    margin: 0;
-    padding: 0;
-} 
-
-
-/*==============MAIN VIDEO SECTION==============*/
+/*==============MAIN VIDEO SECTION/*==============*/
 section.main-video {
     display: grid;
     grid-template-areas: 
