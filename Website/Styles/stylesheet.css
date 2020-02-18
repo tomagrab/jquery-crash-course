@@ -5,9 +5,23 @@
     --jquery-background: #144e9a;           /*JQuery logo background color*/
     --jquery-accent: #7acef4;               /*JQuery logo accent color*/
     --white: #ffffff;                       /*White color*/
-    --body-background: #cfd0d1;
+    --body-background: #cfd0d1;             /*Body background color*/
+    --link-color: #6666FF;                  /*Hyperlink color*/
+    --red-text: red;                        /*Ted text color*/
 }
 
+/*==============SPAN SECTION==============*/
+span.bold {
+    font-weight: 900;
+}
+
+span.red {
+    color: var(--red-text);
+}
+
+span.underline {
+    text-decoration: underline;
+}
 /*==============BODY SECTION/*==============*/
 
 html {
@@ -79,33 +93,56 @@ section.main1 div.content-box {
     display: grid;
     grid-template-areas: 
         'T T T T'           /*'T' for 'Title'*/
-        'C C C C';           /*'C' for 'Content'*/
+        'S S S S'           /*'S for 'Subtitile*/
+        'C C C C';          /*'C' for 'Content'*/
     background-color: var(--white);
 }
 
-section.main1 div.content-box h3 {
-    font-size: 1.5rem;
+section.main1 div.content-box h2 {
+    font-size: 2rem;
     text-align: center;
     border-bottom: 1px solid black;
     padding-bottom: 10px;
     grid-area: T;
 }
 
-section.main1 div.content-box p {
+section.main1 div.content-box h3 {
+    font-size: 1.8rem;
+    text-align: left;
     padding: 10px;
     padding-bottom: 0;
+    grid-area: S;
+}
+
+section.main1 div.content-box div.content-box-content {
     grid-area: C;
+}
+
+section.main1 div.content-box div.content-box-content p {
+    padding: 10px;
+    padding-bottom: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+section.main1 div.content-box div.content-box-content ul {
+    margin-left: 40px;
+    font-size: 1.4rem;
+}
+
+section.main1 div.content-box div.content-box-content ul li a:hover {
+    color: var(--link-color);
+    text-decoration: underline;
 }
 
 /*==============MAIN VIDEO SECTION/*==============*/
 section.main-video div.video-container {
     margin: 30px auto;
     margin-top: 0;
-    width: 800px;
-    height: 450px;
+    width: 80%;
+    height: 300px;
     border-radius: 5px;
     padding: 0;
-    height: 350px;
     overflow: hidden;
     border: 10px solid var(--jquery-background);
     background-color: var(--grayscale);
