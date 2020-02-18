@@ -12,19 +12,19 @@
 
 
 $(document).ready(function(){
-    $("#even").click(function() {
+    $("#test1").click(function() {
         $(".content-box-content > div:even").toggle();          //Toggles even divs
     })
     
-    $("#odd").click(function() {
+    $("#test2").click(function() {
         $(".content-box-content > div:odd").toggle();           //Toggles odd divs
     })
 
-    $("#all").click(function() {
+    $("#test3").click(function() {
         $(".content-box-content > div").toggle();               //Toggles all divs
     })
 
-    $("#cen").click(function() {
+    $("#test4").click(function() {
         $("p:contains('center')").toggle();                     //Toggles paragraphs containing the word 'center'
     })
                                                                 
