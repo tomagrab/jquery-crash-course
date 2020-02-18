@@ -54,7 +54,7 @@ header h1 {
 }
 
 header h1:hover {
-    opacity: .8;
+    color: var(--jquery-accent);
 }
 
 /*==============FOOTER SECTION/*==============*/
@@ -79,9 +79,7 @@ footer p {
 section.main1 {
     display: grid;
     grid-template-areas: 
-        '. . .'
-        '. CB .'            /*'CB' for 'Content Box'*/
-        '. . .';
+        '. CB .';            /*'CB' for 'Content Box'*/
     margin: 30px 0;
 }
 
@@ -136,16 +134,18 @@ section.main1 div.content-box div.content-box-content ul li a:hover {
 }
 
 /*==============MAIN VIDEO SECTION/*==============*/
+section.main-video {
+    display: grid;
+    grid-template-areas: 
+        '. V V .';          /*'V' for 'Video'*/
+    height: 516px;
+}
+
 section.main-video div.video-container {
-    margin: 30px auto;
-    margin-top: 0;
-    width: 80%;
-    height: 300px;
-    border-radius: 5px;
-    padding: 0;
-    overflow: hidden;
+    grid-area: V;
     border: 10px solid var(--jquery-background);
-    background-color: var(--grayscale);
+    border-radius: 5px;
+    background-color: var(--jquery-background);
 }
 
 section.main-video div.video-container iframe {
