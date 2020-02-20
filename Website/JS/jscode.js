@@ -13,19 +13,19 @@
 
 $(document).ready(function(){
     $("#test1").click(function() {
-        $(".content-box-content > div:even").toggle();          //Toggles even divs
+        $(".content-box-content > div:has(b)").toggle();          //Toggles even divs
     })
     
     $("#test2").click(function() {
-        $(".content-box-content > div:odd").toggle();           //Toggles odd divs
+        $("#center > ul li:nth-child(2)").toggle();           //Toggles odd divs
     })
 
-    $("#test3").click(function() {
+    /*$("#test3").click(function() {
         $(".content-box-content > div").toggle();               //Toggles all divs
     })
 
     $("#test4").click(function() {
-        $("p:contains('center')").toggle();                     //Toggles paragraphs containing the word 'center'
-    })
+        $("p:contains('center')").toggle();                     //Toggles paragraphs containing the 
+    }) */                                                       //word 'center'
                                                                 
 });

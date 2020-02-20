@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en-US">
   <head>
     <title>Episode 7: JQuery Selectors Part 3 | JQuery Crash Course</title>
@@ -25,7 +25,7 @@
       <div class="content-wrapper">
         <section class="main-video">
           <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/dWa-lQUD0pA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/4s0QuBEdgJ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>  
         </section>
     
@@ -35,30 +35,33 @@
               Episode 7: JQuery Selectors Part 3
             </h2>
             <div class="content-box-content">
-              <div id="left">
+              <div id="left" class="box">
                 <h3>Left content area</h3>
+                <p>This is the FIRST para</p>
+                <p>This is the <b>SECOND</b> para</p>
+              </div>
+              <div id="center" class="box">
+                <h3>Center content area</h3>
+                <ul>
+                  <li>Child 1</li>
+                  <li>Child 2</li>
+                  <li>Child 3</li>
+                  <li>Child 4</li>
+                  <li>Child 5</li>
+                </ul>
+              </div>
+                <div id="right" class="box">
+                <h3>Right content area</h3>
                 <p>This is the FIRST para</p>
                 <p>This is the SECOND para</p>
               </div>
-              <div id="center">
-                <h3>Center content area</h3>
-                <p>
-                  This area will contain the center content area.
-                </p>
-              </div>
-              <div id="right">
-                <h3>Right content area</h3>
-                <p>
-                  This area will contain the right content area.
-                </p>
-              </div>
+            </div>
+            <button id="test1">Hide div with (b)</button>
+            <button id="test2">Hide 2nd child</button>
+            <!-- <button id="test3">Hide all divs</button>
+            <button id="test4">Hide paragraphs with word 'center'</button> -->
           </div>
-          <button id="test1">Hide Even divs</button>
-          <button id="test2">Hide Odd divs</button>
-          <button id="test3">Hide all divs</button>
-          <button id="test4">Hide paragraphs with word 'center'</button>
         </section> 
-      </div>    
       
       <footer>
         <p>&copy; None 2020 | All rights reserved</p>

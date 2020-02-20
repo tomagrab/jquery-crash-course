@@ -127,8 +127,17 @@ section.main1 div.content-box div.content-box-content p {
     padding: 10px;
     padding-bottom: 0;
     font-size: 1.6rem;
-    font-weight: 700;
-    
+    font-weight: 700;   
+}
+
+
+section.main1 div.content-box div.content-box-content div.box {
+    width: 200px;
+}
+
+section.main1 div.content-box div.content-box-content div.box ul {
+    margin-left: 20px;
+    font-size: 1rem;
 }
 
 section.main1 div.content-box button#test1, button#test2, button#test3, button#test4 {
