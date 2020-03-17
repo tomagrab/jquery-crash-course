@@ -1,10 +1,3 @@
-/*Class for addClass method*/
-.para {
-    background-color: var(--jquery-background);
-    color: var(--white);
-    border-radius: 5px;
-}
-
 /*==============VARIABLES SECTION/*==============*/
 :root {
     --text-primary: hsl(0,0%,25%);          /*Primary color for text*/
